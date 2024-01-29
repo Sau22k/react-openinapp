@@ -1,0 +1,360 @@
+.app {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(100deg, #605BFF 50%, #F8FAFF 50%);
+}
+
+.company-info {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px;
+}
+
+.circles {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+  background-image: repeating-linear-gradient(180deg,#fff,#fff 37px,#605bff 1px,#605BFF 43px);
+  /* background-image: repeating-linear-gradient(0deg,#fff 26px,#fff 21px,#fff 36px,#605bff 34px,#605BFF 42px); */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* .company-logo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  margin-bottom: 10px;
+} */
+
+.company-name {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: 'white';
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.social-img {
+  width: 40px;
+  height: 40px;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 70px;
+}
+
+
+.sign-text {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.signin-opt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.google-button {
+  margin-right: 30px;
+  color: #858585;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 20px;
+}
+
+.apple-button {
+  margin-left: 5px;
+  color: #858585;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 20px;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: #EAEAEA;
+  border-radius: 12px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.forgot-password {
+  text-align: left;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.submit {
+  background-color: #605BFF;
+  color: #fff;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.new-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* ------------ Upload.js ------------ */
+.side-menu {
+  width: 200px; 
+  height: 86%;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  margin-top: 45px;
+}
+
+.side-menu button {
+  margin: 20px; 
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: #fff;
+  color: #35353c;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.upload-section {
+  margin-top: 20px;
+}
+
+/*--------------------- dashboard----------------------- */
+.container {
+  background: white; 
+}
+
+/*---------------------- navbar-------------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #605BFF;
+  padding: 10px 50px 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+ul {
+  padding: 5px 10px 5px 0px;
+}
+
+.li {
+  margin: 15px;
+  list-style: none;
+  font-size: 20px;
+}
+
+
+/* Upload.css */
+.upload-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 500px;
+  height: 100vh;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 50px;
+  left: 50px;
+  text-align: center;
+}
+
+.upload-section input[type="file"] {
+  margin: 10px;
+}
+
+/* .upload-section button {
+  padding: 10px 20px;
+  background-color: #605BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ */
+
+
+
+
+
+
+@media only screen and (max-width: 762px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .company-info {
+    flex: initial; 
+    width: 100%;
+    background-color: #605BFF;
+    padding: 17px 0;
+    text-align: center;
+  }
+
+  .circle {
+    display: inline-block;
+    top: 5px;
+    left: 5px;
+  }
+
+  .circles {
+    top: 25px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .company-name {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .login-form {
+    padding: 20px;
+    background-color: #EAEAEA;
+    justify-content: flex-start;
+  }
+
+  .social-links {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #605BFF;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .social-link {
+    margin-bottom: 0;
+  }
+
+  .social-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .side-menu {
+    width: 80%; 
+    height: 100%;
+  }
+
+}
+
+
+
